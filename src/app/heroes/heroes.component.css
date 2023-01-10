@@ -9,6 +9,8 @@
 
 .colonne {
     width: 30%;
+    overflow-y: scroll;
+    height: 90vh;
 }
 
 .button-small {
@@ -37,4 +39,9 @@
 
 .hero-suggested {
     padding: 4px;
+}
+
+.suggestion {
+    overflow-y: scroll;
+    height: 45vh;
 }

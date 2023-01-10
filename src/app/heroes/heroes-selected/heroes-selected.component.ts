@@ -9,11 +9,11 @@ import { Component, OnInit, Input, DoCheck } from '@angular/core';
 export class HeroesSelectedComponent implements OnInit {
 
   @Input() heroesAlie?: Hero[];
-  
+
   @Input() heroesAdversaire?: Hero[];
 
   chanceVictoireAlie: number = 0;
-  
+
   chanceVictoireAdversaire: number = 0;
 
   constructor() { }
@@ -36,9 +36,9 @@ export class HeroesSelectedComponent implements OnInit {
         this.chanceVictoireAdversaire += hero.value;
       });
     }
-      this.chanceVictoireAlie = Number((this.chanceVictoireAlie * 100 / (this.chanceVictoireAlie + this.chanceVictoireAdversaire)).toFixed(2));
-      this.chanceVictoireAdversaire = 100 - this.chanceVictoireAlie;   
+    this.chanceVictoireAlie = Number((this.chanceVictoireAlie * 100 / (this.chanceVictoireAlie + this.chanceVictoireAdversaire)).toFixed(2));
+    this.chanceVictoireAdversaire = 100 - this.chanceVictoireAlie;
   }
-  
+
 
 }
