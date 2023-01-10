@@ -1,0 +1,40 @@
+.hero-card {
+    line-height: 6px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between
+}
+
+.colonne {
+    width: 30%;
+}
+
+.button-small {
+    font-size: 0.4em;
+}
+
+.blue {
+    color: blue;
+    padding: 4px;
+}
+
+.red {
+    color: red;
+    padding: 4px;
+}
+
+.green {
+    color: green;
+    padding: 4px;
+}
+
+.purple {
+    color: purple;
+    padding: 4px;
+}
+
+.hero-suggested {
+    padding: 4px;
+}

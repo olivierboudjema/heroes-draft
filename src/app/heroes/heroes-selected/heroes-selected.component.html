@@ -1,0 +1,33 @@
+<div *ngIf="heroesAlie" class="hero-alie-container">
+  <span>
+    heroes aliés:
+    <b
+      ><span class="hero-label" *ngFor="let hero of heroesAlie">{{
+        hero.name
+      }}</span></b
+    >
+  </span>
+  <div></div>
+  <span>
+    heroes adversaires :
+    <b
+      ><span class="hero-label" *ngFor="let hero of heroesAdversaire">{{
+        hero.name
+      }}</span></b
+    >
+  </span>
+</div>
+<div class="hero-alie-container">
+  <span>
+    chances victoire aliés:
+    <b
+      ><span class="hero-label">{{ chanceVictoireAlie }}% </span>
+    </b>
+  </span>
+  <span>
+    chances victoire adversaires:
+    <b
+      ><span class="hero-label">{{ chanceVictoireAdversaire }}% </span>
+    </b>
+  </span>
+</div>

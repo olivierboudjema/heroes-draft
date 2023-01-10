@@ -1,0 +1,8 @@
+.hero-label {
+    padding: 2px;
+}
+
+.hero-alie-container {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,10 @@
+<div *ngIf="hero" class="hero-detail-container">
+  <p><b>Value:</b> {{ hero.value }}</p>
+  <p><b>Niveau de tier:</b> {{ hero.tier }}</p>
+  <p><b>Role:</b> {{ hero.role }}</p>
+  <p><b>Cac: </b>{{ hero.cac_ranged }}</p>
+  <p><b>Maps fortes:</b> {{ hero.map_strong.join(", ") }}</p>
+  <p><b>Maps faibles:</b> {{ hero.map_weak.join(", ") }}</p>
+  <p><b>Synergie avec:</b> {{ hero.synergy_with.join(", ") }}</p>
+  <p><b>Contre par:</b> {{ hero.counter_by.join(", ") }}</p>
+</div>
