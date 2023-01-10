@@ -83,9 +83,9 @@
     },
     {
         "name": "anduin",
-        "value": 4,
-        "base_value": 4,
-        "tier": "S",
+        "value": 3,
+        "base_value": 3,
+        "tier": "A",
         "role": "heal",
         "cac_ranged": "ranged",
         "map_strong": [
@@ -115,11 +115,11 @@
     },
     {
         "name": "alarak",
-        "value": 4,
-        "base_value": 4,
-        "tier": "S",
-        "role": "heal",
-        "cac_ranged": "ranged",
+        "value": 2,
+        "base_value": 2,
+        "tier": "B",
+        "role": "assassin",
+        "cac_ranged": "cac",
         "map_strong": [
             "champ_eternite",
             "val_maudit",
