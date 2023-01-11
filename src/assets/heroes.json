@@ -77,37 +77,25 @@
         "role": "heal",
         "cac_ranged": "ranged",
         "map_strong": [
-            "passe_alterac",
-            "val_maudit",
-            "tour_du_destin",
-            "jardin_terreur",
-            "temple_celeste"
+            "temple_hanamura",
+            "tombe_reine_araingne",
+            "tour_du_destin"
         ],
         "map_weak": [
-            "champ_eternite",
-            "laboratoir_braxis",
-            "temple_hanamura",
-            "tombe_reine_araingne"
+            "jardin_terreur",
+            "temple_celeste",
+            "menace_nucleaire",
+            "jardin_terreur"
         ],
         "synergy_with": [
-            "illidan",
-            "zeratul",
-            "tracer",
-            "greymane",
-            "maltael",
-            "sonya",
-            "Yrel ",
-            "genji"
+            "liming",
+            "e.t.c"
         ],
         "counter_by": [
-            "dehaka",
-            "falstad",
-            "nova",
+            "anub'arak",
             "zeratul",
-            "ragnaros",
-            "zarya",
-            "hammer",
-            "sylvanas"
+            "hanzo",
+            "lucio"
         ]
     },
     {
@@ -140,6 +128,33 @@
             "lunara",
             "kaelthas",
             "stukov"
+        ]
+    },
+    {
+        "name": "aile_de_mort",
+        "value": 1,
+        "base_value": 1,
+        "tier": "S",
+        "role": "bruiser",
+        "cac_ranged": "cac",
+        "map_strong": [
+            "passe_alterac",
+            "sanctuaire_infernaux",
+            "laboratoire_braxis"
+        ],
+        "map_weak": [],
+        "synergy_with": [
+            "e.t.c",
+            "arthas",
+            "johanna",
+            "muradin"
+        ],
+        "counter_by": [
+            "tychus",
+            "greymane",
+            "valla",
+            "zeratul",
+            "tracer"
         ]
     },
     {
@@ -374,6 +389,38 @@
             "greymane",
             "tychus",
             "anduin"
+        ]
+    },
+    {
+        "name": "boucher",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
+        "role": "assassin",
+        "cac_ranged": "cac",
+        "map_strong": [
+            "compte_dragon",
+            "temple_celeste",
+            "jardin_terreur",
+            "tombe_reine_araingne",
+            "tour_destin",
+            "menace_nucleaire"
+        ],
+        "map_weak": [
+            "laboratoir_braxis",
+            "champ_eternite"
+        ],
+        "synergy_with": [
+            "abathur",
+            "tyrande",
+            "uther",
+            "tyrael"
+        ],
+        "counter_by": [
+            "johanna",
+            "e.t.c",
+            "luisaile",
+            "uther"
         ]
     },
     {
@@ -934,6 +981,37 @@
         ]
     },
     {
+        "name": "hanzo",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
+        "role": "assassin",
+        "cac_ranged": "ranged",
+        "map_strong": [
+            "val_maudit",
+            "champ_eternite",
+            "compte_dragon",
+            "sanctuaire_infernaux",
+            "tour_destin"
+        ],
+        "map_weak": [
+            "menace_nucleaire"
+        ],
+        "synergy_with": [
+            "zeratul",
+            "e.t.c",
+            "diablo",
+            "kramer",
+            "johanna",
+            "malganis"
+        ],
+        "counter_by": [
+            "illidan",
+            "genji",
+            "zeratul"
+        ]
+    },
+    {
         "name": "illidan",
         "value": 1,
         "base_value": 1,
@@ -942,25 +1020,33 @@
         "cac_ranged": "cac",
         "map_strong": [
             "val_maudit",
-            "compte_dragon",
+            "menace_nucleaire",
             "jardin_terreur",
             "temple_celeste"
         ],
         "map_weak": [
             "laboratoir_braxis",
-            "tombe_reine_araingne",
-            "temple_hanamura",
-            "menace_nucleaire"
+            "tour_destin",
+            "champ_eternite"
         ],
         "synergy_with": [
-            "valla",
-            "li-ming",
-            "raynor"
+            "abathur",
+            "medivh",
+            "reghar",
+            "tyrael",
+            "uther",
+            "zarya"
         ],
         "counter_by": [
             "muradin",
-            "diablo",
-            "chen"
+            "arthas",
+            "luisaile",
+            "e.t.c",
+            "li-li",
+            "johanna",
+            "sonya",
+            "uther",
+            "varian"
         ]
     },
     {
@@ -1160,6 +1246,42 @@
         ]
     },
     {
+        "name": "kelthuzad",
+        "value": 1,
+        "base_value": 2,
+        "tier": "A",
+        "role": "assassin",
+        "cac_ranged": "ranged",
+        "map_strong": [
+            "champ_eternite",
+            "laboratoir_braxis",
+            "tour_destin"
+        ],
+        "map_weak": [
+            "passe_alterac",
+            "menace_nucleaire"
+        ],
+        "synergy_with": [
+            "anduin",
+            "arthas",
+            "malfurion",
+            "valeera",
+            "varian",
+            "xul",
+            "johanna",
+            "boucher"
+        ],
+        "counter_by": [
+            "anub'arak",
+            "chen",
+            "genji",
+            "nova",
+            "tracer",
+            "valeera",
+            "zeratul"
+        ]
+    },
+    {
         "name": "krammer",
         "value": 3,
         "base_value": 3,
@@ -1220,32 +1342,32 @@
     },
     {
         "name": "li-li",
-        "value": 2,
+        "value": 1,
         "base_value": 2,
-        "tier": "A",
+        "tier": "C",
         "role": "heal",
         "cac_ranged": "ranged",
         "map_strong": [
             "champ_eternite",
             "compte_dragon",
-            "jardin_terreur",
-            "tombe_reine_araingne"
+            "temple_hanamura"
         ],
         "map_weak": [
-            "laboratoir_braxis",
-            "temple_hanamura",
-            "temple_celeste",
-            "menace_nucleaire"
+            "temple_celeste"
         ],
         "synergy_with": [
-            "valla",
-            "li-ming",
-            "raynor"
+            "johanna",
+            "kramer",
+            "hanzo",
+            "kaelthas",
+            "uther"
         ],
         "counter_by": [
-            "muradin",
-            "diablo",
-            "chen"
+            "e.t.c",
+            "yriel",
+            "sylvanas",
+            "jaina",
+            "stukov"
         ]
     },
     {
@@ -1428,6 +1550,39 @@
         ]
     },
     {
+        "name": "malganis",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
+        "role": "tank",
+        "cac_ranged": "cac",
+        "map_strong": [
+            "sanctuaire_infernaux",
+            "laboratoire_braxis",
+            "jardin_terreur",
+            "temple_hanamura",
+            "passe_alterac",
+            "champ_eternite",
+            "temple_celeste",
+            "tour_destin"
+        ],
+        "map_weak": [
+            "tombe_reine_araingne",
+            "menace_nucleaire"
+        ],
+        "synergy_with": [
+            "zeratul",
+            "malfurion",
+            "jaina"
+        ],
+        "counter_by": [
+            "garrosh",
+            "hanzo",
+            "zeratul",
+            "malfurion"
+        ]
+    },
+    {
         "name": "malthael",
         "value": 2,
         "base_value": 2,
@@ -1502,62 +1657,71 @@
     },
     {
         "name": "maiev",
-        "value": 3,
-        "base_value": 3,
+        "value": 1,
+        "base_value": 1,
         "tier": "A",
         "role": "assassin",
         "cac_ranged": "cac",
         "map_strong": [
+            "laboratoir_braxis",
             "val_maudit",
             "compte_dragon",
             "jardin_terreur",
-            "temple_celeste"
+            "sanctuaire_infernaux",
+            "tombe_reine_araingne"
         ],
         "map_weak": [
-            "laboratoir_braxis",
-            "tombe_reine_araingne",
+            "champ_eternite",
             "temple_hanamura",
             "menace_nucleaire"
         ],
         "synergy_with": [
-            "valla",
-            "li-ming",
-            "raynor"
+            "e.t.c",
+            "maeiv",
+            "jaina",
+            "tassadar",
+            "deckard",
+            "malfurion"
         ],
         "counter_by": [
-            "muradin",
-            "diablo",
-            "chen"
+            "arthas",
+            "tyrael",
+            "e.t.c",
+            "johanna",
+            "lunara",
+            "tracer",
+            "lucio",
+            "luisaile"
         ]
     },
     {
         "name": "medivh",
-        "value": 3,
-        "base_value": 3,
-        "tier": "A",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
         "role": "assassin",
         "cac_ranged": "ranged",
         "map_strong": [
-            "champ_eternite",
-            "compte_dragon",
-            "jardin_terreur",
-            "tombe_reine_araingne"
+            "val_maudit",
+            "temple_celeste"
         ],
         "map_weak": [
             "laboratoir_braxis",
-            "temple_hanamura",
-            "temple_celeste",
-            "menace_nucleaire"
+            "champ_eternite"
         ],
         "synergy_with": [
-            "valla",
-            "li-ming",
-            "raynor"
+            "illidan",
+            "greymane",
+            "genji",
+            "tracer",
+            "diablo",
+            "balafre"
         ],
         "counter_by": [
-            "muradin",
-            "diablo",
-            "chen"
+            "guldan",
+            "lunara",
+            "garrosh",
+            "malfurion"
         ]
     },
     {
@@ -1714,29 +1878,35 @@
     },
     {
         "name": "nova",
-        "value": 3,
-        "base_value": 3,
-        "tier": "A",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
         "role": "assassin",
         "cac_ranged": "ranged",
         "map_strong": [
             "compte_dragon",
-            "tombe_reine_araingne"
+            "temple_hanamura",
+            "menace_nucleaire"
         ],
         "map_weak": [
             "compte_dragon",
             "laboratoir_braxis",
-            "temple_celeste",
-            "champ_eternite"
+            "jardin_terreur",
+            "tour_destin",
+            "temple_celeste"
         ],
         "synergy_with": [
             "johanna",
             "stukov",
-            "raynor"
+            "kramer",
+            "sylvanas"
         ],
         "counter_by": [
-            "e.t.c",
-            "sylvanas"
+            "anub'arak",
+            "chen",
+            "genji",
+            "zarya",
+            "luisaile"
         ]
     },
     {
@@ -1772,6 +1942,37 @@
             "lunara",
             "muradin",
             "nova",
+            "tracer"
+        ]
+    },
+    {
+        "name": "probius",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
+        "role": "assassin",
+        "cac_ranged": "ranged",
+        "map_strong": [
+            "laboratoir_braxis",
+            "passe_alterac",
+            "tombe_reine_araingne",
+            "tour_destin",
+            "sanctuaire_infernaux"
+        ],
+        "map_weak": [
+            "champ_eternite"
+        ],
+        "synergy_with": [
+            "e.t.c",
+            "diablo",
+            "anub'arak",
+            "arthas",
+            "malfurion"
+        ],
+        "counter_by": [
+            "kerrigan",
+            "alarak",
+            "zeratul",
             "tracer"
         ]
     },
@@ -2169,6 +2370,39 @@
         ]
     },
     {
+        "name": "tyrael",
+        "value": 1,
+        "base_value": 3,
+        "tier": "C",
+        "role": "tank",
+        "cac_ranged": "cac",
+        "map_strong": [
+            "val_maudit",
+            "temple_celeste",
+            "tour_du_destin",
+            "menace_nucleaire"
+        ],
+        "map_weak": [
+            "laboratoir_braxis",
+            "temple_hanamura",
+            "compte_dragon",
+            "jardin_terreur",
+            "sanctuaire_infernaux",
+            "tombe_reine_araingne"
+        ],
+        "synergy_with": [
+            "kramer",
+            "illidan",
+            "malfurion"
+        ],
+        "counter_by": [
+            "garrosh",
+            "etc",
+            "zeratul",
+            "greymane"
+        ]
+    },
+    {
         "name": "tyrande",
         "value": 2,
         "base_value": 2,
@@ -2321,7 +2555,7 @@
         "base_value": 2,
         "tier": "B",
         "role": "tank",
-        "cac_ranged": "ranged",
+        "cac_ranged": "cac",
         "map_strong": [
             "laboratoire_braxis",
             "compte_dragon",
@@ -2347,6 +2581,44 @@
             "lunara",
             "medivh",
             "rehgar"
+        ]
+    },
+    {
+        "name": "vikings",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
+        "role": "assassin",
+        "cac_ranged": "ranged",
+        "map_strong": [
+            "passe_alterac",
+            "val_maudit",
+            "temple_celeste",
+            "tour_destin",
+            "menace_nucleaire",
+            "jardin_terreur"
+        ],
+        "map_weak": [
+            "laboratoir_braxis",
+            "temple_hanamura",
+            "champ_eternite",
+            "tombe_reine_araingne"
+        ],
+        "synergy_with": [
+            "zarya",
+            "garrosh",
+            "sylvanas",
+            "raynor",
+            "hammer"
+        ],
+        "counter_by": [
+            "zagara",
+            "sonya",
+            "zeratul",
+            "nova",
+            "falstad",
+            "dehaka",
+            "liming"
         ]
     },
     {
@@ -2472,32 +2744,33 @@
     },
     {
         "name": "zarya",
-        "value": 3,
-        "base_value": 3,
-        "tier": "A",
+        "value": 1,
+        "base_value": 1,
+        "tier": "C",
         "role": "bruiser",
         "cac_ranged": "ranged",
         "map_strong": [
-            "val_maudit",
-            "compte_dragon",
-            "jardin_terreur",
-            "temple_celeste"
+            "champ_eternite",
+            "laboratoir_braxis",
+            "temple_hanamura"
         ],
         "map_weak": [
-            "laboratoir_braxis",
-            "tombe_reine_araingne",
-            "temple_hanamura",
+            "val_maudit",
+            "jardin_terreur",
             "menace_nucleaire"
         ],
         "synergy_with": [
+            "garrosh",
+            "sonya",
             "valla",
-            "li-ming",
-            "raynor"
+            "malfurion"
         ],
         "counter_by": [
-            "muradin",
-            "diablo",
-            "chen"
+            "malganis",
+            "yriel",
+            "lunara",
+            "tassadar",
+            "auriel"
         ]
     },
     {
