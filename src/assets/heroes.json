@@ -1776,6 +1776,36 @@
         ]
     },
     {
+        "name": "ragnaros",
+        "value": 4,
+        "base_value": 4,
+        "tier": "S",
+        "role": "bruiser",
+        "cac_ranged": "cac",
+        "map_strong": [
+            "menace_nucleaire",
+            "sanctuaire_infernaux",
+            "tombe_reine_araingne"
+        ],
+        "map_weak": [
+            "tour_du_destin",
+            "champ_eternite"
+        ],
+        "synergy_with": [
+            "e.t.c",
+            "hanzo",
+            "kaelthas",
+            "ana"
+        ],
+        "counter_by": [
+            "garrosh",
+            "chen",
+            "lunara",
+            "jaina",
+            "stukov"
+        ]
+    },
+    {
         "name": "raynor",
         "value": 3,
         "base_value": 3,

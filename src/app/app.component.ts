@@ -83,7 +83,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAlie.forEach(hero_alie => {
       if (hero.synergy_with.includes(hero_alie.name)) {
-        console.log(hero.synergy_with)
         console.log(`${hero_alie.name} is in the list hero alié for ${hero.name}`);
         count++;
       }
@@ -95,7 +94,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAdversaire.forEach(heroesAdversaire => {
       if (hero.counter_by.includes(heroesAdversaire.name)) {
-        console.log(hero.counter_by)
         console.log(`${heroesAdversaire.name} is in the list hero adversaire for ${hero.name}`);
         count--;
       }
@@ -124,6 +122,7 @@ export class AppComponent {
     if (tanks > 1 && hero.role === "tank") return - (tanks - 1);
     if (heals > 1 && hero.role === "heal") return - (heals - 1);
     if (bruisers > 1 && hero.role === "bruiser") return - (bruisers - 1);
+    if (bruisers === 1 && tanks === 1) return - (bruisers - 1);
     if (assassins > 3 && hero.role === "assassin") return - (assassins - 3);
 
     return 0;
@@ -161,7 +160,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAdversaire.forEach(hero_alie => {
       if (hero.synergy_with.includes(hero_alie.name)) {
-        console.log(hero.synergy_with)
         console.log(`${hero_alie.name} is in the list hero alié for ${hero.name}`);
         count++;
       }
@@ -173,7 +171,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAlie.forEach(heroesAdversaire => {
       if (hero.counter_by.includes(heroesAdversaire.name)) {
-        console.log(hero.counter_by)
         console.log(`${heroesAdversaire.name} is in the list hero adversaire for ${hero.name}`);
         count--;
       }
@@ -231,8 +228,6 @@ export class AppComponent {
     this.heroesService.getHeroes().subscribe(heroes => {
       this.heroes = heroes;
       this.heroes_a_ban = JSON.parse(JSON.stringify(heroes))
-      console.log(this.heroes)
-      console.log(this.heroes_a_ban)
       this.calculerAllHeroesValue(this.mapSelected)
     });
   }
