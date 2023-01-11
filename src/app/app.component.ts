@@ -45,6 +45,8 @@ export class AppComponent {
   onMapSelected(map: string) {
     this.mapSelected = map;
     this.calculerAllHeroesValue(map)
+    this.heroes = this.heroes.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
+    this.heroes_a_ban = this.heroes_a_ban.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
   }
 
   calculerAllHeroesValue(map: string) {
@@ -54,6 +56,7 @@ export class AppComponent {
     this.heroes_a_ban.forEach((hero: Hero) => {
       this.BancalculerHeroValue(hero, map)
     });
+
   }
 
   calculerHeroValue(hero: Hero, map: string) {
