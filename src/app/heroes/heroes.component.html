@@ -25,7 +25,7 @@
     <div class="suggestion" style="margin-bottom: 16px;">
       <h3>Heros suggérés</h3>
       <div class="hero-card" *ngFor="let hero of heroesSuggested | sortBy : 'value' : true">
-        <div class="hero-suggested" [style.font-size]="hero.value * 3 + 10 + 'px'">
+        <div class="hero-suggested" [style.font-size]="hero.value * 3 + 14 + 'px'">
           <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
           <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> &nbsp;{{ hero.name
             }}</span>
@@ -41,7 +41,7 @@
     <div class="suggestion">
       <h3>Ban suggérés</h3>
       <div class="hero-card" *ngFor="let hero of bansSuggested | sortBy : 'value' : true">
-        <div class="hero-suggested" [style.font-size]="hero.value * 3 + 10 +  'px'">
+        <div class="hero-suggested" [style.font-size]="hero.value * 3 + 14 +  'px'">
           <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
           <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> &nbsp;{{ hero.name
             }}</span>
