@@ -2217,7 +2217,7 @@
         "value": 1,
         "base_value": 1,
         "tier": "A",
-        "role": "tank",
+        "role": "assassin",
         "cac_ranged": "ranged",
         "map_strong": [
             "laboratoire_braxis",
@@ -2430,36 +2430,6 @@
             "maeiv",
             "fenix",
             "lunara"
-        ]
-    },
-    {
-        "name": "tyrael",
-        "value": 1,
-        "base_value": 1,
-        "tier": "A",
-        "role": "heal",
-        "cac_ranged": "ranged",
-        "map_strong": [
-            "champ_eternite",
-            "compte_dragon",
-            "jardin_terreur",
-            "tombe_reine_araingne"
-        ],
-        "map_weak": [
-            "laboratoir_braxis",
-            "temple_hanamura",
-            "temple_celeste",
-            "menace_nucleaire"
-        ],
-        "synergy_with": [
-            "valla",
-            "li-ming",
-            "raynor"
-        ],
-        "counter_by": [
-            "muradin",
-            "diablo",
-            "chen"
         ]
     },
     {
