@@ -26,7 +26,7 @@
             "greymane",
             "maltael",
             "sonya",
-            "Yrel ",
+            "yrel ",
             "genji"
         ],
         "counter_by": [
@@ -488,7 +488,7 @@
         "value": 10.5,
         "base_value": 10.5,
         "tier": "B",
-        "role": "heal",
+        "role": "tank",
         "cac_ranged": "cac",
         "map_strong": [
             "sanctuaire_infernaux",
@@ -511,7 +511,7 @@
         ],
         "counter_by": [
             "e.t.c",
-            "Yrel ",
+            "yrel ",
             "raynor",
             "li-ming",
             "vikings_perdus"
@@ -538,7 +538,7 @@
             "ana",
             "auriel",
             "luisaile",
-            "Yrel ",
+            "yrel ",
             "krammer"
         ],
         "counter_by": [
@@ -1072,7 +1072,7 @@
             "rehgar",
             "malganis",
             "e.t.c",
-            "Yrel ",
+            "yrel ",
             "krammer"
         ],
         "counter_by": [
@@ -1722,7 +1722,7 @@
         ],
         "counter_by": [
             "e.t.c",
-            "Yrel ",
+            "yrel ",
             "hanzo",
             "chacal",
             "zeratul",
@@ -2086,7 +2086,7 @@
         "counter_by": [
             "e.t.c",
             "lucio",
-            "Yrel ",
+            "yrel ",
             "cassia",
             "orphea",
             "medivh",
@@ -2342,7 +2342,7 @@
     {
         "name": "tyrael",
         "value": 10,
-        "base_value": 11,
+        "base_value": 10,
         "tier": "C",
         "role": "tank",
         "cac_ranged": "cac",
@@ -2625,7 +2625,7 @@
         ]
     },
     {
-        "name": "Yrel",
+        "name": "yrel",
         "value": 10.5,
         "base_value": 10.5,
         "tier": "B",

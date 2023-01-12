@@ -1,4 +1,5 @@
 import { SortByPipe } from './sort-by.pipe';
+import { SortNamePipe } from './sort-name.pipe';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,6 +16,7 @@ import { HeroesSelectedComponent } from './heroes/heroes-selected/heroes-selecte
     AppComponent,
     HeroesComponent,
     SortByPipe,
+    SortNamePipe,
     HeroDetailsComponent,
     HeroesSelectedComponent
   ],

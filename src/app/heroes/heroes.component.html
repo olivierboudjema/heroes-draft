@@ -1,16 +1,16 @@
 <div class="hero-container">
   <div class="colonne">
     <h3>Aliés</h3>
-    <div class="hero-card" *ngFor="let hero of heroes">
+    <div class="hero-card" *ngFor="let hero of heroes | sortName:'name'">
       <div>
         <input type="checkbox" [(ngModel)]="hero.selectedAlie" (change)="onAlieSelected(hero)" />
         <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
         <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name
           }}</span>
         <span *ngIf="hero.role === 'heal'" class="green">
-          <i class="far fa-plus-square"></i> &nbsp;{{ hero.name }}</span>
+          <i class="far fa-plus-square"></i> {{ hero.name }}</span>
         <span *ngIf="hero.role === 'bruiser'" class="purple">
-          <i class="fas fa-fist-raised"></i> &nbsp;{{ hero.name }}</span>
+          <i class="fas fa-fist-raised"></i> {{ hero.name }}</span>
         <button class="button-small" (click)="hero.showDetails = !hero.showDetails">
           détails
         </button>
@@ -25,14 +25,14 @@
     <div class="suggestion" style="margin-bottom: 16px;">
       <h3>Heros suggérés</h3>
       <div class="hero-card" *ngFor="let hero of heroesSuggested | sortBy : 'value' : true">
-        <div class="hero-suggested" [style.font-size]="hero.value * 3 + 14 + 'px'">
+        <div class="hero-suggested" [style.font-size]="hero.value * 2 - 4 + 'px'">
           <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
           <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name
             }}</span>
           <span *ngIf="hero.role === 'heal'" class="green">
-            <i class="far fa-plus-square"></i> &nbsp;{{ hero.name }}</span>
+            <i class="far fa-plus-square"></i> {{ hero.name }}</span>
           <span *ngIf="hero.role === 'bruiser'" class="purple">
-            <i class="fas fa-fist-raised"></i> &nbsp;{{ hero.name }}</span>
+            <i class="fas fa-fist-raised"></i> {{ hero.name }}</span>
           <b> {{ hero.value }} </b>
         </div>
       </div>
@@ -41,14 +41,14 @@
     <div class="suggestion">
       <h3>Ban suggérés</h3>
       <div class="hero-card" *ngFor="let hero of bansSuggested | sortBy : 'value' : true">
-        <div class="hero-suggested" [style.font-size]="hero.value * 3 + 14 +  'px'">
+        <div class="hero-suggested" [style.font-size]="hero.value * 2 - 4 +  'px'">
           <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
           <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name
             }}</span>
           <span *ngIf="hero.role === 'heal'" class="green">
-            <i class="far fa-plus-square"></i> &nbsp;{{ hero.name }}</span>
+            <i class="far fa-plus-square"></i> {{ hero.name }}</span>
           <span *ngIf="hero.role === 'bruiser'" class="purple">
-            <i class="fas fa-fist-raised"></i> &nbsp;{{ hero.name }}</span>
+            <i class="fas fa-fist-raised"></i> {{ hero.name }}</span>
           <b> {{ hero.value }} </b>
         </div>
       </div>
@@ -57,16 +57,16 @@
 
   <div class="colonne">
     <h3>Adversaires</h3>
-    <div class="hero-card" *ngFor="let hero of heroes">
+    <div class="hero-card" *ngFor="let hero of heroes | sortName:'name'">
       <div>
         <input type="checkbox" [(ngModel)]="hero.selectedAdversaire" (change)="onAdversaireSelected(hero)" />
         <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
         <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name
           }}</span>
         <span *ngIf="hero.role === 'heal'" class="green">
-          <i class="far fa-plus-square"></i> &nbsp;{{ hero.name }}</span>
+          <i class="far fa-plus-square"></i> {{ hero.name }}</span>
         <span *ngIf="hero.role === 'bruiser'" class="purple">
-          <i class="fas fa-fist-raised"></i> &nbsp;{{ hero.name }}</span>
+          <i class="fas fa-fist-raised"></i> {{ hero.name }}</span>
         <button class="button-small" (click)="hero.showDetailsAdversaire = !hero.showDetailsAdversaire">
           détails
         </button>
