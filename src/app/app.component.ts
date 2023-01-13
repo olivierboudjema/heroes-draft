@@ -72,11 +72,9 @@ export class AppComponent {
 
   MapPoint(hero: Hero, map: string): number {
     if (hero.map_strong.includes(map)) {
-      console.log(`${map} is in the list map_strong for ${hero.name}`);
       return 1
     }
     if (hero.map_weak.includes(map)) {
-      console.log(`${map} is in the list map_weak for ${hero.name}`);
       return -1
     } else {
       return 0
@@ -87,7 +85,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAlie.forEach(hero_alie => {
       if (hero.synergy_with.includes(hero_alie.name)) {
-        console.log(`${hero_alie.name} is in the list hero alié for ${hero.name}`);
         count++;
       }
     });
@@ -98,7 +95,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAdversaire.forEach(heroesAdversaire => {
       if (hero.counter_by.includes(heroesAdversaire.name)) {
-        console.log(`${heroesAdversaire.name} is in the list hero adversaire for ${hero.name}`);
         count--;
       }
     });
@@ -187,7 +183,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAdversaire.forEach(hero_alie => {
       if (hero.synergy_with.includes(hero_alie.name)) {
-        console.log(`${hero_alie.name} is in the list hero alié for ${hero.name}`);
         count++;
       }
     });
@@ -198,7 +193,6 @@ export class AppComponent {
     let count = 0;
     this.heroesAlie.forEach(heroesAdversaire => {
       if (hero.counter_by.includes(heroesAdversaire.name)) {
-        console.log(`${heroesAdversaire.name} is in the list hero adversaire for ${hero.name}`);
         count--;
       }
     });

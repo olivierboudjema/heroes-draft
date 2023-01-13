@@ -2,13 +2,13 @@
   <span>
     heroes aliés:
     <span class="hero-label" *ngFor="let hero of heroesAlie">
-      <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
-      <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name
-        }}</span>
+      <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name | firstLetterUpperCase }} : {{ hero.value }}</span>
+      <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name | firstLetterUpperCase
+        }} : {{ hero.value }}</span>
       <span *ngIf="hero.role === 'heal'" class="green">
-        <i class="far fa-plus-square"></i> {{ hero.name }}</span>
+        <i class="far fa-plus-square"></i> {{ hero.name | firstLetterUpperCase }} : {{ hero.value }}</span>
       <span *ngIf="hero.role === 'bruiser'" class="purple">
-        <i class="fas fa-fist-raised"></i> {{ hero.name }}</span>
+        <i class="fas fa-fist-raised"></i> {{ hero.name | firstLetterUpperCase }} : {{ hero.value }}</span>
     </span>
   </span>
   <br>
@@ -16,25 +16,30 @@
   <span>
     heroes adversaires :
     <span class="hero-label" *ngFor="let hero of heroesAdversaire">
-      <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name }}</span>
-      <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name
-        }}</span>
+      <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name | firstLetterUpperCase }} : {{ hero.value }}</span>
+      <span *ngIf="hero.role === 'assassin'" class="red"><i class="fas fa-crosshairs"></i> {{ hero.name | firstLetterUpperCase
+        }} : {{ hero.value }}</span>
       <span *ngIf="hero.role === 'heal'" class="green">
-        <i class="far fa-plus-square"></i> {{ hero.name }}</span>
+        <i class="far fa-plus-square"></i> {{ hero.name | firstLetterUpperCase}} : {{ hero.value }}</span>
       <span *ngIf="hero.role === 'bruiser'" class="purple">
-        <i class="fas fa-fist-raised"></i> {{ hero.name }}</span>
+        <i class="fas fa-fist-raised"></i> {{ hero.name | firstLetterUpperCase }} : {{ hero.value }}</span>
     </span>
   </span>
 </div>
 <div class="hero-alie-container">
   <span>
     chances victoire aliés:
+    <span class="hero-label pourcentage">{{ sommePointsVictoire(heroesAlie) }}</span>
+    ==>
     <span class="hero-label pourcentage">{{ chanceVictoireAlie }}% </span>
 
   </span>
   <span>
     chances victoire adversaires:
+    <span class="hero-label pourcentage">{{ sommePointsVictoire(heroesAdversaire) }}</span>
+    ==>
     <span class="hero-label pourcentage">{{ chanceVictoireAdversaire }}% </span>
+
 
   </span>
   <br>

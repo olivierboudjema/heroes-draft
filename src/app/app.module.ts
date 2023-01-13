@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailsComponent } from './heroes/hero-details/hero-details.component';
 import { HeroesSelectedComponent } from './heroes/heroes-selected/heroes-selected.component';
+import { FirstLetterUpperCasePipe } from './heroes/first-letter-upper-case.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HeroesSelectedComponent } from './heroes/heroes-selected/heroes-selecte
     HeroesComponent,
     SortByPipe,
     SortNamePipe,
+    FirstLetterUpperCasePipe,
     HeroDetailsComponent,
     HeroesSelectedComponent
   ],

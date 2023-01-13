@@ -40,5 +40,11 @@ export class HeroesSelectedComponent implements OnInit {
     this.chanceVictoireAdversaire = 100 - this.chanceVictoireAlie;
   }
 
+  sommePointsVictoire(heroList: any[] | undefined): number {
+    if (heroList !== undefined) {
+      return heroList.reduce((acc: any, obj: { value: any; }) => acc + obj.value, 0);
+    } else return 0
+  }
+
 
 }
