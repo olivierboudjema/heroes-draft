@@ -69,6 +69,38 @@ export class HeroesComponent implements OnInit {
     }
   }
 
+  onAlieBanned(hero: Hero) {
+
+    this.heroesSuggested = this.heroesSuggested.filter(hero => hero.banned !== true);
+    this.bansSuggested.forEach(element => {
+      if (element.name === hero.name) {
+        element.banned = true
+        this.bansSuggested = this.bansSuggested.filter(hero => hero.banned !== true);
+      }
+    });
+
+    if (hero.banned === false) {
+      this.heroesSuggested.push(hero);
+      this.bansSuggested.push(hero);
+      this.bansSuggested = this.bansSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
+    }
+  }
+
+  onAdversaireBanned(hero: Hero) {
+
+    this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAdversaire !== true);
+    this.bansSuggested.forEach(element => {
+      if (element.name === hero.name) {
+        element.selectedAdversaire = true
+        this.bansSuggested = this.bansSuggested.filter(hero => hero.selectedAdversaire !== true);
+      }
+    });
+    if (hero.selectedAdversaire === false) {
+      this.heroesSuggested.push(hero);
+      this.bansSuggested.push(hero);
+      this.bansSuggested = this.bansSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
+    }
+  }
 
 
 }

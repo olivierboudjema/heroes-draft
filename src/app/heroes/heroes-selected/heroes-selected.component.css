@@ -1,8 +1,41 @@
 .hero-label {
-    padding: 2px;
+    padding: 4px;
+    color: white;
 }
 
 .hero-alie-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 8px;
+    padding: 4px;
+
+}
+
+.red {
+    background-color: red;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.green {
+    background-color: green;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.purple {
+    background-color: purple;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.pourcentage {
+    background-color: black;
+    border-radius: 8px;
 }

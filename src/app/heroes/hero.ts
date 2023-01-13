@@ -13,4 +13,5 @@ export interface Hero {
   selectedAdversaire?: boolean;
   showDetails?: boolean;
   showDetailsAdversaire?: boolean;
+  banned?: boolean;
 }
