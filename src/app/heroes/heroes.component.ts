@@ -70,7 +70,6 @@ export class HeroesComponent implements OnInit {
   }
 
   onAlieBanned(hero: Hero) {
-
     this.heroesSuggested = this.heroesSuggested.filter(hero => hero.banned !== true);
     this.bansSuggested.forEach(element => {
       if (element.name === hero.name) {
@@ -87,18 +86,17 @@ export class HeroesComponent implements OnInit {
   }
 
   onAdversaireBanned(hero: Hero) {
-
-    this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAdversaire !== true);
-    this.bansSuggested.forEach(element => {
+    this.bansSuggested = this.bansSuggested.filter(hero => hero.banned !== true);
+    this.heroesSuggested.forEach(element => {
       if (element.name === hero.name) {
-        element.selectedAdversaire = true
-        this.bansSuggested = this.bansSuggested.filter(hero => hero.selectedAdversaire !== true);
+        element.banned = true
+        this.heroesSuggested = this.heroesSuggested.filter(hero => hero.banned !== true);
       }
     });
-    if (hero.selectedAdversaire === false) {
-      this.heroesSuggested.push(hero);
+    if (hero.banned === false) {
       this.bansSuggested.push(hero);
-      this.bansSuggested = this.bansSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
+      this.heroesSuggested.push(hero);
+      this.heroesSuggested = this.heroesSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
     }
   }
 

@@ -14,7 +14,7 @@
         <button class="button-small" (click)="hero.showDetails = !hero.showDetails">
           détails
         </button>
-        ban<input type="checkbox" [(ngModel)]="hero.banned" (change)="onAlieBanned(hero)" />
+        - ban<input type="checkbox" [(ngModel)]="hero.banned" (change)="onAlieBanned(hero)" />
       </div>
       <div *ngIf="hero.showDetails">
         <app-hero-details [hero]="hero"></app-hero-details>
@@ -71,7 +71,7 @@
         <button class="button-small" (click)="hero.showDetailsAdversaire = !hero.showDetailsAdversaire">
           détails
         </button>
-        <!-- ban<input type="checkbox" [(ngModel)]="hero.banned" (change)="onAdversaireBanned(hero)" /> -->
+        - ban<input type="checkbox" [(ngModel)]="hero.banned" (change)="onAdversaireBanned(hero)" />
       </div>
 
       <div *ngIf="hero.showDetailsAdversaire">
