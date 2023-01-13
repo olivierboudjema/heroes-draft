@@ -54,7 +54,7 @@ export class AppComponent {
       this.calculerHeroValue(hero, map)
     });
     this.heroes_a_ban.forEach((hero: Hero) => {
-      this.BancalculerHeroValue(hero, map)
+      this.BanCalculerHeroValue(hero, map)
     });
 
   }
@@ -66,6 +66,7 @@ export class AppComponent {
     hero.value = hero.value + this.AdversairePoint(hero);
     hero.value = hero.value + this.CheckTeamConditions(hero);
     hero.value = hero.value + this.CheckCacRangedConditions(hero);
+    hero.value = hero.value + this.NeedAtLeastOneTankOneHeal(hero);
   }
 
 
@@ -150,13 +151,36 @@ export class AppComponent {
     return 0;
   }
 
-  BancalculerHeroValue(hero: Hero, map: string) {
+  NeedAtLeastOneTankOneHeal(hero: Hero): number {
+    let tanks = 0;
+    let heals = 0;
+    let teamSize = 0
+
+    this.heroesAlie.forEach(hero_alie => {
+      if (hero_alie.role === 'tank') tanks++;
+      if (hero_alie.role === 'heal') heals++;
+      teamSize++
+    });
+
+    if (hero.role === 'tank') tanks++;
+    if (hero.role === 'heal') heals++;
+
+
+
+    if (tanks === 0 && teamSize > 3 && hero.role !== "tank") { return -2; }
+    if (heals === 0 && teamSize > 3 && hero.role !== "heal") { return -2; }
+
+    return 0;
+  }
+
+  BanCalculerHeroValue(hero: Hero, map: string) {
     hero.value = hero.base_value;
     hero.value = hero.value + this.MapPoint(hero, map);
     hero.value = hero.value + this.BanAliePoint(hero);
     hero.value = hero.value + this.BanAdversairePoint(hero);
     hero.value = hero.value + this.BanCheckTeamConditions(hero);
     hero.value = hero.value + this.BanCheckCacRangedConditions(hero);
+    hero.value = hero.value + this.BanNeedAtLeastOneTankOneHeal(hero);
   }
 
   BanAliePoint(hero: Hero): number {
@@ -221,6 +245,28 @@ export class AppComponent {
 
     if (cac > 3 && hero.cac_ranged === "cac") return -(cac - 3);
     if (ranged > 3 && hero.cac_ranged === "ranged") return -(ranged - 3);
+
+    return 0;
+  }
+
+  BanNeedAtLeastOneTankOneHeal(hero: Hero): number {
+    let tanks = 0;
+    let heals = 0;
+    let teamSize = 0
+
+    this.heroesAdversaire.forEach(hero_alie => {
+      if (hero_alie.role === 'tank') tanks++;
+      if (hero_alie.role === 'heal') heals++;
+      teamSize++
+    });
+
+    if (hero.role === 'tank') tanks++;
+    if (hero.role === 'heal') heals++;
+
+
+
+    if (tanks === 0 && teamSize > 3 && hero.role !== "tank") { return -2; }
+    if (heals === 0 && teamSize > 3 && hero.role !== "heal") { return -2; }
 
     return 0;
   }
