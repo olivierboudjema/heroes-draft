@@ -1,23 +1,11 @@
 <div class="map">
   <div for="map-select">Sélectionnez une map</div>
   &nbsp;
-  <select
-    id="hero-select"
-    [(ngModel)]="mapSelected"
-    (change)="onMapSelected(mapSelected)"
-  >
+  <select id="hero-select" [(ngModel)]="mapSelected" (change)="onMapSelected(mapSelected)">
     <option *ngFor="let map of maps" [value]="map.name">{{ map.name }}</option>
   </select>
 </div>
 
-<app-heroes-selected
-  [heroesAlie]="heroesAlie"
-  [heroesAdversaire]="heroesAdversaire"
-></app-heroes-selected>
+<app-heroes-selected [heroesAlie]="heroesAlie" [heroesAdversaire]="heroesAdversaire"></app-heroes-selected>
 
-<app-heroes
-  [heroes]="heroes"
-  [heroes_a_ban]="heroes_a_ban"
-  (myEventAlieSelected)="myEventAlieSelected($event)"
-  (myEventAdversaireSelected)="myEventAdversaireSelected($event)"
-></app-heroes>
+<app-heroes [heroes]="heroes" [heroes_a_ban]="heroes_a_ban" (myEventAlieSelected)="myEventAlieSelected($event)" (myEventAdversaireSelected)="myEventAdversaireSelected($event)"></app-heroes>

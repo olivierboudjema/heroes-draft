@@ -58,7 +58,7 @@
 
   <div class="colonne">
     <h3>Adversaires</h3>
-    <div class="hero-card" *ngFor="let hero of heroes | sortName:'name'">
+    <div class="hero-card" *ngFor="let hero of heroes_a_ban | sortName:'name'">
       <div>
         <input type="checkbox" [(ngModel)]="hero.selectedAdversaire" (change)="onAdversaireSelected(hero)" />
         <span *ngIf="hero.role === 'tank'" class="blue"><i class="fas fa-shield-alt"></i> {{ hero.name | firstLetterUpperCase }}</span>
@@ -71,7 +71,7 @@
         <button class="button-small" (click)="hero.showDetailsAdversaire = !hero.showDetailsAdversaire">
           détails
         </button>
-        ban<input type="checkbox" [(ngModel)]="hero.banned" (change)="onAdversaireBanned(hero)" />
+        <!-- ban<input type="checkbox" [(ngModel)]="hero.banned" (change)="onAdversaireBanned(hero)" /> -->
       </div>
 
       <div *ngIf="hero.showDetailsAdversaire">

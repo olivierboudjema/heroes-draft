@@ -119,11 +119,11 @@ export class AppComponent {
     if (hero.role === 'assassin') assassins++;
     if (hero.role === 'bruiser') bruisers++;
 
-    if (tanks > 1 && hero.role === "tank") return - (tanks - 1);
-    if (heals > 1 && hero.role === "heal") return - (heals - 1);
-    if (bruisers > 1 && hero.role === "bruiser") return - (bruisers - 1);
-    if (bruisers === 1 && tanks === 1) return - (bruisers - 1);
-    if (assassins > 3 && hero.role === "assassin") return - (assassins - 3);
+    if (tanks > 2 && hero.role === "tank") return - (tanks - 2);
+    if (heals > 2 && hero.role === "heal") return - (heals - 2);
+    if (bruisers > 2 && hero.role === "bruiser") return - (bruisers - 2);
+    if (bruisers === 1 && tanks === 1) return - (bruisers - 2);
+    if (assassins > 4 && hero.role === "assassin") return - (assassins - 6);
 
     return 0;
   }
@@ -217,10 +217,11 @@ export class AppComponent {
     if (hero.role === 'assassin') assassins++;
     if (hero.role === 'bruiser') bruisers++;
 
-    if (tanks > 1 && hero.role === "tank") return - (tanks - 1);
-    if (heals > 1 && hero.role === "heal") return - (heals - 1);
-    if (bruisers > 1 && hero.role === "bruiser") return - (bruisers - 1);
-    if (assassins > 3 && hero.role === "assassin") return - (assassins - 3);
+    if (tanks > 2 && hero.role === "tank") return - (tanks - 2);
+    if (heals > 2 && hero.role === "heal") return - (heals - 2);
+    if (bruisers > 2 && hero.role === "bruiser") return - (bruisers - 2);
+    if (bruisers === 1 && tanks === 1) return - (bruisers - 2);
+    if (assassins > 4 && hero.role === "assassin") return - (assassins - 6);
 
     return 0;
   }
