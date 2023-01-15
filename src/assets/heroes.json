@@ -57,7 +57,7 @@
         ],
         "synergy_with": [
             "johanna",
-            "krammer",
+            "kramer",
             "kaelthas",
             "azmodan"
         ],
@@ -116,7 +116,7 @@
         ],
         "synergy_with": [
             "johanna",
-            "krammer",
+            "kramer",
             "boucher",
             "alarak",
             "genji",
@@ -378,7 +378,7 @@
             "menace_nucleaire"
         ],
         "synergy_with": [
-            "krammer",
+            "kramer",
             "falstad",
             "kaelthas",
             "malfurion"
@@ -539,7 +539,7 @@
             "auriel",
             "luisaile",
             "yrel ",
-            "krammer"
+            "kramer"
         ],
         "counter_by": [
             "anub'arak",
@@ -629,7 +629,7 @@
         ],
         "synergy_with": [
             "johanna",
-            "krammer",
+            "kramer",
             "hanzo",
             "jaina"
         ],
@@ -722,7 +722,7 @@
             "tombe_reine_araingne"
         ],
         "synergy_with": [
-            "krammer",
+            "kramer",
             "alarak",
             "greymane",
             "kaelthas",
@@ -1073,7 +1073,7 @@
             "malganis",
             "e.t.c",
             "yrel ",
-            "krammer"
+            "kramer"
         ],
         "counter_by": [
             "jaina",
@@ -1139,7 +1139,7 @@
             "temple_hanamura"
         ],
         "synergy_with": [
-            "krammer",
+            "kramer",
             "medivh",
             "hanzo",
             "jaina",
@@ -1282,7 +1282,7 @@
         ]
     },
     {
-        "name": "krammer",
+        "name": "kramer",
         "value": 11,
         "base_value": 11,
         "tier": "A",
@@ -1582,7 +1582,7 @@
             "malfurion"
         ],
         "counter_by": [
-            "krammer",
+            "kramer",
             "falstad",
             "fenix",
             "lunara",
@@ -1606,7 +1606,7 @@
         ],
         "map_weak": [],
         "synergy_with": [
-            "krammer",
+            "kramer",
             "chromie",
             "guldan",
             "jaina",
@@ -1806,7 +1806,7 @@
             "sanctuaire_infernaux"
         ],
         "synergy_with": [
-            "krammer",
+            "kramer",
             "kerrigan",
             "kaelthas",
             "hanzo",
@@ -1819,6 +1819,30 @@
             "raynor",
             "jaina",
             "malfurion"
+        ]
+    },
+    {
+        "name": "murky",
+        "value": 10,
+        "base_value": 10,
+        "tier": "C",
+        "role": "assassin",
+        "cac_ranged": "cac",
+        "map_strong": [
+            "jardin_terreur"
+        ],
+        "map_weak": [
+            "tombe_reine_araingne",
+            "laboratoir_braxis"
+        ],
+        "synergy_with": [
+            "johanna",
+            "zarya",
+            "luisaile"
+        ],
+        "counter_by": [
+            "sonya",
+            "falstad"
         ]
     },
     {
@@ -2121,38 +2145,6 @@
             "garrosh",
             "tychus",
             "sylvanas"
-        ]
-    },
-    {
-        "name": "stitches",
-        "value": 11,
-        "base_value": 11,
-        "tier": "A",
-        "role": "tank",
-        "cac_ranged": "ranged",
-        "map_strong": [
-            "val_maudit",
-            "compte_dragon",
-            "sanctuaire_infernaux",
-            "tombe_reine_araingne"
-        ],
-        "map_weak": [
-            "laboratoir_braxis",
-            "temple_hanamura",
-            "temple_celeste",
-            "menace_nucleaire"
-        ],
-        "synergy_with": [
-            "thrall",
-            "malfurion",
-            "tyrande"
-        ],
-        "counter_by": [
-            "muradin",
-            "leoric",
-            "malthael",
-            "raynor",
-            "tychus"
         ]
     },
     {
@@ -2511,7 +2503,7 @@
         ],
         "synergy_with": [
             "e.t.c",
-            "krammer",
+            "kramer",
             "li-ming",
             "tyrande"
         ],

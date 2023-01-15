@@ -37,7 +37,13 @@ export class HeroesComponent implements OnInit {
   onAlieSelected(hero: Hero) {
     this.myEventAlieSelected.emit(hero);
 
-    this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAlie !== true);
+    // this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAlie !== true);
+    this.heroesSuggested.forEach(element => {
+      if (element.name === hero.name) {
+        element.selectedAlie = true
+        this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAlie !== true);
+      }
+    });
     this.bansSuggested.forEach(element => {
       if (element.name === hero.name) {
         element.selectedAlie = true
@@ -48,6 +54,7 @@ export class HeroesComponent implements OnInit {
     if (hero.selectedAlie === false) {
       this.heroesSuggested.push(hero);
       this.bansSuggested.push(hero);
+      this.heroesSuggested = this.heroesSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
       this.bansSuggested = this.bansSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
     }
   }
@@ -55,7 +62,13 @@ export class HeroesComponent implements OnInit {
   onAdversaireSelected(hero: Hero) {
     this.myEventAdversaireSelected.emit(hero);
 
-    this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAdversaire !== true);
+    // this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAdversaire !== true);
+    this.heroesSuggested.forEach(element => {
+      if (element.name === hero.name) {
+        element.selectedAdversaire = true
+        this.heroesSuggested = this.heroesSuggested.filter(hero => hero.selectedAdversaire !== true);
+      }
+    });
     this.bansSuggested.forEach(element => {
       if (element.name === hero.name) {
         element.selectedAdversaire = true
@@ -65,6 +78,7 @@ export class HeroesComponent implements OnInit {
     if (hero.selectedAdversaire === false) {
       this.heroesSuggested.push(hero);
       this.bansSuggested.push(hero);
+      this.heroesSuggested = this.heroesSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
       this.bansSuggested = this.bansSuggested.slice().sort((a: { value: number; }, b: { value: number; }) => b.value - a.value);
     }
   }

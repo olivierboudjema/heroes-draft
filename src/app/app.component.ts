@@ -67,6 +67,7 @@ export class AppComponent {
     hero.value = hero.value + this.CheckTeamConditions(hero);
     hero.value = hero.value + this.CheckCacRangedConditions(hero);
     hero.value = hero.value + this.NeedAtLeastOneTankOneHeal(hero);
+    hero.value = hero.value + this.NoMoreThanOneTankOneHeal(hero);
   }
 
 
@@ -161,10 +162,23 @@ export class AppComponent {
     if (hero.role === 'tank') tanks++;
     if (hero.role === 'heal') heals++;
 
-
-
     if (tanks === 0 && teamSize > 3 && hero.role !== "tank") { return -2; }
     if (heals === 0 && teamSize > 3 && hero.role !== "heal") { return -2; }
+
+    return 0;
+  }
+
+  NoMoreThanOneTankOneHeal(hero: Hero): number {
+    let tanks = 0;
+    let heals = 0;
+
+    this.heroesAlie.forEach(hero_alie => {
+      if (hero_alie.role === 'tank') tanks++;
+      if (hero_alie.role === 'heal') heals++;
+    });
+
+    if (tanks > 0 && hero.role === "tank") { return -2; }
+    if (heals > 0 && hero.role === "heal") { return -2; }
 
     return 0;
   }
@@ -260,13 +274,11 @@ export class AppComponent {
 
 
 
-    if (tanks === 0 && teamSize > 3 && hero.role !== "tank") { return -2; }
-    if (heals === 0 && teamSize > 3 && hero.role !== "heal") { return -2; }
+    if (tanks === 0 && teamSize > 3 && hero.role !== "tank") { return -4; }
+    if (heals === 0 && teamSize > 3 && hero.role !== "heal") { return -4; }
 
     return 0;
   }
-
-
 
   private getHeroes() {
     this.heroesService.getHeroes().subscribe(heroes => {
