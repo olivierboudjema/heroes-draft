@@ -22,6 +22,7 @@ export class AppComponent {
   ngOnInit() {
     this.getHeroes();
     this.getMaps();
+    //
   }
 
   myEventAlieSelected(hero: any) {
